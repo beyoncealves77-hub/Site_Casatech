@@ -147,7 +147,7 @@ function adicionarProdutoAoCarrinho(usuario) {
     const imagem =
         imagemElemento
             ? imagemElemento.getAttribute("src")
-            : "../Imagens/Produto teste.webp";
+            : "../imagens/smartphone-premium-bordo.jpg";
 
     const tamanho =
         tamanhoSelecionado

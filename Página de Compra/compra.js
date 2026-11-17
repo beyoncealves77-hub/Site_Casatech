@@ -1,430 +1,245 @@
+// ATUALIZAÇÃO 17/11 - PRODUTOS REAIS DA CASATECH
 const produtos = {
 
-
     1: {
-
-        categoria: "ROUPAS",
-
-        nome: "Camiseta Oversized",
-
-        preco: "R$ 100,00",
-
-        descricao:
-            "Camiseta confortável com modelagem oversized.",
-
-        temTamanho: true,
-
-        tamanhos: ["P", "M", "G", "GG"],
-
+        categoria: "CELULARES",
+        nome: "Smartphone Premium 256 GB",
+        preco: "R$ 11.999,00",
+        descricao: "Smartphone premium com acabamento moderno, câmera avançada e alto desempenho.",
+        temTamanho: false,
         variacoes: [
-
             {
-                nome: "Modelo Preto",
-
-                especificacao:
-                    "Cor preta • 100% algodão",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Bordô",
+                especificacao: "Cor bordô • 256 GB",
+                imagem: "../imagens/smartphone-premium-bordo.jpg"
             },
-
             {
-                nome: "Modelo Branco",
-
-                especificacao:
-                    "Cor branca • 100% algodão",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Rosa",
+                especificacao: "Cor rosa • 256 GB",
+                imagem: "../imagens/smartphone-premium-rosa.jpg"
             }
-
         ]
-
     },
-
-
 
     2: {
-
-        categoria: "INFORMÁTICA",
-
-        nome: "Mouse Gamer",
-
-        preco: "R$ 150,00",
-
-        descricao:
-            "Mouse gamer com iluminação RGB e alta precisão.",
-
+        categoria: "CELULARES",
+        nome: "Galaxy S26 Ultra",
+        preco: "R$ 8.999,00",
+        descricao: "Smartphone premium com tela ampla, câmera avançada e caneta integrada.",
         temTamanho: false,
-
         variacoes: [
-
             {
-                nome: "Modelo Basic",
-
-                especificacao:
-                    "7200 DPI • 6 botões • RGB",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Roxo",
+                especificacao: "Cor roxa • Linha Ultra",
+                imagem: "../imagens/smartphone-galaxy-s26-ultra-roxo.jpg"
             },
-
             {
-                nome: "Modelo Pro",
-
-                especificacao:
-                    "12000 DPI • 8 botões • RGB",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Branco",
+                especificacao: "Cor branca • Linha Ultra",
+                imagem: "../imagens/smartphone-galaxy-s26-ultra-branco.jpg"
             },
-
             {
-                nome: "Modelo Wireless",
-
-                especificacao:
-                    "Sem fio • 10000 DPI • RGB",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Azul",
+                especificacao: "Cor azul • Linha Ultra",
+                imagem: "../imagens/smartphone-galaxy-s26-ultra-azul.jpg"
             }
-
         ]
-
     },
-
-
 
     3: {
-
-        categoria: "ACESSÓRIOS",
-
-        nome: "Mochila",
-
-        preco: "R$ 200,00",
-
-        descricao:
-            "Mochila para escola, trabalho ou viagens.",
-
+        categoria: "ELETROS",
+        nome: "Robô Aspirador Inteligente",
+        preco: "R$ 2.499,00",
+        descricao: "Robô aspirador inteligente para limpeza automática da casa.",
         temTamanho: false,
-
         variacoes: [
-
             {
-                nome: "Modelo Compacto",
-
-                especificacao:
-                    "20 litros • 2 compartimentos",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Preto",
+                especificacao: "Modelo preto com base",
+                imagem: "../imagens/robo-aspirador-preto.jpg"
             },
-
             {
-                nome: "Modelo Grande",
-
-                especificacao:
-                    "35 litros • 4 compartimentos",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Branco",
+                especificacao: "Modelo branco com base",
+                imagem: "../imagens/robo-aspirador-branco.jpg"
+            },
+            {
+                nome: "Premium",
+                especificacao: "Modelo premium preto com estação",
+                imagem: "../imagens/robo-aspirador-premium-preto.jpg"
             }
-
         ]
-
     },
-
-
 
     4: {
-
-        categoria: "OUTROS",
-
-        nome: "Perfume",
-
-        preco: "R$ 250,00",
-
-        descricao:
-            "Fragrância marcante para diferentes ocasiões.",
-
+        categoria: "ELETROS",
+        nome: "Geladeira Smart",
+        preco: "R$ 6.999,00",
+        descricao: "Geladeira moderna com amplo espaço interno e acabamento premium.",
         temTamanho: false,
-
         variacoes: [
-
             {
-                nome: "Frasco 50 ml",
-
-                especificacao:
-                    "Conteúdo de 50 ml",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Inox 1",
+                especificacao: "Acabamento inox • 3 portas",
+                imagem: "../imagens/geladeira-smart-inox-01.jpg"
             },
-
             {
-                nome: "Frasco 100 ml",
-
-                especificacao:
-                    "Conteúdo de 100 ml",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Inox 2",
+                especificacao: "Acabamento inox • painel frontal",
+                imagem: "../imagens/geladeira-smart-inox-02.jpg"
+            },
+            {
+                nome: "Preta",
+                especificacao: "Acabamento preto • 4 portas",
+                imagem: "../imagens/geladeira-smart-preta.jpg"
             }
-
         ]
-
     },
-
-
 
     5: {
-
-        categoria: "ROUPAS",
-
-        nome: "Moletom Street",
-
-        preco: "R$ 250,00",
-
-        descricao:
-            "Moletom confortável com estilo urbano.",
-
-        temTamanho: true,
-
-        tamanhos: ["P", "M", "G", "GG"],
-
+        categoria: "ACESSÓRIOS",
+        nome: "Óculos de Realidade Virtual",
+        preco: "R$ 399,00",
+        descricao: "Óculos de realidade virtual para experiências imersivas com smartphone.",
+        temTamanho: false,
         variacoes: [
-
             {
-                nome: "Modelo Preto",
-
-                especificacao:
-                    "Moletom preto",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "VR Box 1",
+                especificacao: "Modelo com controle",
+                imagem: "../imagens/oculos-vr-01.jpg"
             },
-
             {
-                nome: "Modelo Cinza",
-
-                especificacao:
-                    "Moletom cinza",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "VR Box 2",
+                especificacao: "Modelo VR Box com controle",
+                imagem: "../imagens/oculos-vr-02.jpg"
+            },
+            {
+                nome: "VR Box 3",
+                especificacao: "Modelo para smartphone",
+                imagem: "../imagens/oculos-vr-03.jpg"
             }
-
         ]
-
     },
-
-
 
     6: {
-
-        categoria: "INFORMÁTICA",
-
-        nome: "Teclado Mecânico",
-
-        preco: "R$ 250,00",
-
-        descricao:
-            "Teclado mecânico para jogos e produtividade.",
-
+        categoria: "ACESSÓRIOS",
+        nome: "Fone Bluetooth",
+        preco: "R$ 899,00",
+        descricao: "Fone de ouvido sem fio com estojo de carregamento.",
         temTamanho: false,
-
         variacoes: [
-
             {
-                nome: "Switch Azul",
-
-                especificacao:
-                    "Switch Blue • RGB",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Preto",
+                especificacao: "Cor preta",
+                imagem: "../imagens/fone-bluetooth-preto.jpg"
             },
-
             {
-                nome: "Switch Vermelho",
-
-                especificacao:
-                    "Switch Red • RGB",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Rosa",
+                especificacao: "Cor rosa",
+                imagem: "../imagens/fone-bluetooth-rosa.jpg"
+            },
+            {
+                nome: "Branco",
+                especificacao: "Cor branca",
+                imagem: "../imagens/fone-bluetooth-branco.jpg"
             }
-
         ]
-
     },
-
-
 
     7: {
-
-        categoria: "ACESSÓRIOS",
-
-        nome: "Boné",
-
-        preco: "R$ 250,00",
-
-        descricao:
-            "Boné ajustável disponível em diferentes modelos.",
-
+        categoria: "INFORMÁTICA",
+        nome: "Teclado Mecânico Compacto",
+        preco: "R$ 349,00",
+        descricao: "Teclado compacto para jogos, estudos e produtividade.",
         temTamanho: false,
-
         variacoes: [
-
             {
-                nome: "Modelo Preto",
-
-                especificacao:
-                    "Cor preta • Ajustável",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Branco",
+                especificacao: "Teclado compacto branco",
+                imagem: "../imagens/teclado-mecanico-branco.jpg"
             },
-
             {
-                nome: "Modelo Branco",
-
-                especificacao:
-                    "Cor branca • Ajustável",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Preto",
+                especificacao: "Teclado compacto preto",
+                imagem: "../imagens/teclado-mecanico-preto.jpg"
+            },
+            {
+                nome: "Rosa",
+                especificacao: "Teclado compacto rosa",
+                imagem: "../imagens/teclado-mecanico-rosa.jpg"
             }
-
         ]
-
     },
-
-
 
     8: {
-
-        categoria: "OUTROS",
-
-        nome: "Caneca Personalizada",
-
-        preco: "R$ 250,00",
-
-        descricao:
-            "Caneca disponível em diferentes modelos.",
-
+        categoria: "ELETROS",
+        nome: "Smart TV 4K",
+        preco: "R$ 3.299,00",
+        descricao: "Smart TV para filmes, séries, aplicativos e entretenimento.",
         temTamanho: false,
-
         variacoes: [
-
             {
-                nome: "Modelo Preto",
-
-                especificacao:
-                    "350 ml • Cerâmica",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Modelo 1",
+                especificacao: "Tela ampla • acabamento preto",
+                imagem: "../imagens/smart-tv-01.jpg"
             },
-
             {
-                nome: "Modelo Branco",
-
-                especificacao:
-                    "350 ml • Cerâmica",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Modelo 2",
+                especificacao: "Smart Hub e aplicativos",
+                imagem: "../imagens/smart-tv-02.jpg"
+            },
+            {
+                nome: "Modelo 3",
+                especificacao: "Design fino",
+                imagem: "../imagens/smart-tv-03.jpg"
             }
-
         ]
-
     },
-
-
 
     9: {
-
-        categoria: "ROUPAS",
-
-        nome: "Calça Cargo",
-
-        preco: "R$ 250,00",
-
-        descricao:
-            "Calça cargo com bolsos laterais.",
-
-        temTamanho: true,
-
-        tamanhos: ["P", "M", "G", "GG"],
-
+        categoria: "INFORMÁTICA",
+        nome: "Notebook",
+        preco: "R$ 5.499,00",
+        descricao: "Notebook para estudos, trabalho e uso diário.",
+        temTamanho: false,
         variacoes: [
-
             {
-                nome: "Modelo Preto",
-
-                especificacao:
-                    "Cor preta",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Rosa",
+                especificacao: "Acabamento rosa",
+                imagem: "../imagens/notebook-rosa.jpg"
             },
-
             {
-                nome: "Modelo Bege",
-
-                especificacao:
-                    "Cor bege",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Preto",
+                especificacao: "Acabamento preto",
+                imagem: "../imagens/notebook-preto.jpg"
             }
-
         ]
-
     },
 
-
-
     10: {
-
-        categoria: "INFORMÁTICA",
-
-        nome: "Headset Gamer",
-
-        preco: "R$ 250,00",
-
-        descricao:
-            "Headset gamer com microfone integrado.",
-
+        categoria: "ACESSÓRIOS",
+        nome: "Smart Speaker com Relógio",
+        preco: "R$ 699,00",
+        descricao: "Caixa de som inteligente com relógio digital e assistente de voz.",
         temTamanho: false,
-
         variacoes: [
-
             {
-                nome: "Modelo USB",
-
-                especificacao:
-                    "USB • Microfone integrado",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Branco",
+                especificacao: "Cor branca",
+                imagem: "../imagens/smart-speaker-branco.jpg"
             },
-
             {
-                nome: "Modelo Wireless",
-
-                especificacao:
-                    "Sem fio • Microfone integrado",
-
-                imagem:
-                    "../Imagens/Produto teste.webp"
+                nome: "Rosa",
+                especificacao: "Cor rosa",
+                imagem: "../imagens/smart-speaker-rosa.jpg"
+            },
+            {
+                nome: "Preto",
+                especificacao: "Cor preta",
+                imagem: "../imagens/smart-speaker-preto.jpg"
             }
-
         ]
-
     }
-
 
 };
 

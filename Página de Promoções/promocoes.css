@@ -91,7 +91,7 @@ header input {
     justify-content: center;
     background:
         linear-gradient(120deg, rgba(0,0,0,0.96), rgba(42,22,22,0.90)),
-        url("../Imagens/banner.png") center/cover;
+        url("../imagens/setup-monitor-branco.jpg") center/cover;
     border-bottom: 1px solid #292929;
 }
 

@@ -1,275 +1,262 @@
 // ATUALIZAÇÃO 01/09 - TODO ESTE ARQUIVO FOI CRIADO NESTA ATUALIZAÇÃO
 
+// ATUALIZAÇÃO 17/11 - PRODUTOS PROMOCIONAIS DA CASATECH
 const produtosPromocao = {
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 1
     1: {
-        categoria: "ROUPAS",
-        nome: "Camiseta Urban",
-        precoOriginal: "R$ 129,90",
-        precoPromocional: "R$ 89,90",
-        desconto: "31% OFF",
-        validade: "30/09/2026",
-        descricao: "Camiseta casual com modelagem moderna.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Câmera Instax Mini",
+        precoOriginal: "R$ 899,00",
+        precoPromocional: "R$ 749,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Câmera instantânea compacta para registrar e imprimir momentos.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Preta", especificacao: "Cor preta • 100% algodão", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Branca", especificacao: "Cor branca • 100% algodão", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Branca", especificacao: "Kit branco", imagem: "../imagens/camera-instax-branca.jpg" },
+            { nome: "Rosa", especificacao: "Kit rosa", imagem: "../imagens/camera-instax-rosa.jpg" },
+            { nome: "Azul", especificacao: "Kit azul", imagem: "../imagens/camera-instax-azul.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 2
     2: {
-        categoria: "ROUPAS",
-        nome: "Jaqueta Street",
-        precoOriginal: "R$ 299,90",
-        precoPromocional: "R$ 219,90",
-        desconto: "27% OFF",
-        validade: "30/09/2026",
-        descricao: "Jaqueta urbana para dias mais frios.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Smartwatch",
+        precoOriginal: "R$ 1.299,00",
+        precoPromocional: "R$ 999,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Relógio inteligente para notificações, atividades e rotina.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Preta", especificacao: "Cor preta • Fechamento em zíper", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Cinza", especificacao: "Cor cinza • Fechamento em zíper", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Preto", especificacao: "Pulseira preta", imagem: "../imagens/smartwatch-preto.jpg" },
+            { nome: "Rosa", especificacao: "Pulseira rosa", imagem: "../imagens/smartwatch-rosa.jpg" },
+            { nome: "Roxo", especificacao: "Pulseira roxa", imagem: "../imagens/smartwatch-roxo.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 3
     3: {
-        categoria: "ROUPAS",
-        nome: "Calça Jogger",
-        precoOriginal: "R$ 189,90",
-        precoPromocional: "R$ 139,90",
-        desconto: "26% OFF",
-        validade: "30/09/2026",
-        descricao: "Calça jogger confortável para uso diário.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Fone Bluetooth",
+        precoOriginal: "R$ 999,00",
+        precoPromocional: "R$ 799,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Fone sem fio com estojo de carregamento.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Preta", especificacao: "Cor preta • Cós elástico", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Bege", especificacao: "Cor bege • Cós elástico", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Preto", especificacao: "Cor preta", imagem: "../imagens/fone-bluetooth-preto.jpg" },
+            { nome: "Rosa", especificacao: "Cor rosa", imagem: "../imagens/fone-bluetooth-rosa.jpg" },
+            { nome: "Branco", especificacao: "Cor branca", imagem: "../imagens/fone-bluetooth-branco.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 4
     4: {
-        categoria: "ROUPAS",
-        nome: "Moletom Premium",
-        precoOriginal: "R$ 249,90",
-        precoPromocional: "R$ 179,90",
-        desconto: "28% OFF",
-        validade: "30/09/2026",
-        descricao: "Moletom macio com estilo casual.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Carregador USB-C",
+        precoOriginal: "R$ 199,00",
+        precoPromocional: "R$ 149,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Carregador compacto com cabo USB-C para uso diário.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Preto", especificacao: "Cor preta • Interior flanelado", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Vinho", especificacao: "Cor vinho • Interior flanelado", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Preto", especificacao: "Carregador preto", imagem: "../imagens/carregador-usbc-preto.jpg" },
+            { nome: "Rosa", especificacao: "Carregador rosa", imagem: "../imagens/carregador-usbc-rosa.jpg" },
+            { nome: "Branco", especificacao: "Carregador branco", imagem: "../imagens/carregador-usbc-branco.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 5
     5: {
-        categoria: "ROUPAS",
-        nome: "Camiseta Tech",
-        precoOriginal: "R$ 149,90",
-        precoPromocional: "R$ 99,90",
-        desconto: "33% OFF",
-        validade: "30/09/2026",
-        descricao: "Camiseta leve com visual tecnológico.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Carregador Lightning",
+        precoOriginal: "R$ 249,00",
+        precoPromocional: "R$ 189,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Carregador com cabo Lightning para dispositivos compatíveis.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Grafite", especificacao: "Cor grafite • Tecido leve", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Azul", especificacao: "Cor azul • Tecido leve", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Modelo 1", especificacao: "Kit branco", imagem: "../imagens/carregador-lightning-branco-01.jpg" },
+            { nome: "Modelo 2", especificacao: "Kit branco com cabo", imagem: "../imagens/carregador-lightning-branco-02.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 6
     6: {
-        categoria: "ROUPAS",
-        nome: "Bermuda Cargo",
-        precoOriginal: "R$ 159,90",
-        precoPromocional: "R$ 109,90",
-        desconto: "31% OFF",
-        validade: "30/09/2026",
-        descricao: "Bermuda cargo com bolsos laterais.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Caixa de Som JBL",
+        precoOriginal: "R$ 599,00",
+        precoPromocional: "R$ 449,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Caixa de som portátil para música e entretenimento.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Preta", especificacao: "Cor preta • Bolsos laterais", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Verde", especificacao: "Cor verde • Bolsos laterais", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Branca", especificacao: "Cor branca", imagem: "../imagens/caixa-som-jbl-branca.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 7
     7: {
-        categoria: "ROUPAS",
-        nome: "Camisa Overshirt",
-        precoOriginal: "R$ 219,90",
-        precoPromocional: "R$ 159,90",
-        desconto: "27% OFF",
-        validade: "30/09/2026",
-        descricao: "Camisa overshirt para compor looks em camadas.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Tablet",
+        precoOriginal: "R$ 2.499,00",
+        precoPromocional: "R$ 1.999,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Tablet para estudos, leitura, vídeos e produtividade.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Preta", especificacao: "Cor preta • Tecido encorpado", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Xadrez", especificacao: "Estampa xadrez • Tecido encorpado", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Rosa", especificacao: "Tablet rosa com caneta", imagem: "../imagens/tablet-rosa.jpg" },
+            { nome: "Branco", especificacao: "Tablet branco", imagem: "../imagens/tablet-branco.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 8
     8: {
-        categoria: "ROUPAS",
-        nome: "Calça Slim",
-        precoOriginal: "R$ 199,90",
-        precoPromocional: "R$ 149,90",
-        desconto: "25% OFF",
-        validade: "30/09/2026",
-        descricao: "Calça slim com acabamento moderno.",
-        temTamanho: true,
-        tamanhos: ["P", "M", "G", "GG"],
+        categoria: "ACESSÓRIOS",
+        nome: "Óculos de Realidade Virtual",
+        precoOriginal: "R$ 499,00",
+        precoPromocional: "R$ 349,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Óculos VR para experiências imersivas com smartphone.",
+        temTamanho: false,
         variacoes: [
-            { nome: "Preta", especificacao: "Cor preta • Modelagem slim", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Azul", especificacao: "Cor azul • Modelagem slim", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Modelo 1", especificacao: "VR Box com controle", imagem: "../imagens/oculos-vr-01.jpg" },
+            { nome: "Modelo 2", especificacao: "VR Box", imagem: "../imagens/oculos-vr-02.jpg" },
+            { nome: "Modelo 3", especificacao: "VR para smartphone", imagem: "../imagens/oculos-vr-03.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 9
     9: {
-        categoria: "INFORMÁTICA",
-        nome: "Mouse RGB Pro",
-        precoOriginal: "R$ 199,90",
-        precoPromocional: "R$ 139,90",
-        desconto: "30% OFF",
-        validade: "30/09/2026",
-        descricao: "Mouse gamer com alta precisão e iluminação RGB.",
+        categoria: "TECNOLOGIA",
+        nome: "PlayStation 5",
+        precoOriginal: "R$ 4.999,00",
+        precoPromocional: "R$ 4.299,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Console de nova geração para jogos e entretenimento.",
         temTamanho: false,
         variacoes: [
-            { nome: "Com fio", especificacao: "12000 DPI • 8 botões • RGB", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Wireless", especificacao: "Sem fio • 10000 DPI • RGB", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Modelo 1", especificacao: "Console com controles", imagem: "../imagens/console-ps5-01.jpg" },
+            { nome: "Modelo 2", especificacao: "Edição digital", imagem: "../imagens/console-ps5-02.jpg" },
+            { nome: "Modelo 3", especificacao: "Edição com leitor", imagem: "../imagens/console-ps5-03.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 10
     10: {
-        categoria: "INFORMÁTICA",
-        nome: "Teclado Compacto",
-        precoOriginal: "R$ 329,90",
-        precoPromocional: "R$ 249,90",
-        desconto: "24% OFF",
-        validade: "30/09/2026",
-        descricao: "Teclado mecânico compacto para jogos e produtividade.",
+        categoria: "TECNOLOGIA",
+        nome: "Impressora HP",
+        precoOriginal: "R$ 899,00",
+        precoPromocional: "R$ 699,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Impressora para trabalhos, estudos e uso doméstico.",
         temTamanho: false,
         variacoes: [
-            { nome: "Switch Red", especificacao: "Switch Red • RGB", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Switch Blue", especificacao: "Switch Blue • RGB", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Preta 1", especificacao: "Modelo preto", imagem: "../imagens/impressora-hp-preta-01.jpg" },
+            { nome: "Branca", especificacao: "Modelo branco", imagem: "../imagens/impressora-hp-branca.jpg" },
+            { nome: "Preta 2", especificacao: "Modelo preto compacto", imagem: "../imagens/impressora-hp-preta-02.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 11
     11: {
-        categoria: "INFORMÁTICA",
-        nome: "Headset Surround",
-        precoOriginal: "R$ 289,90",
-        precoPromocional: "R$ 209,90",
-        desconto: "28% OFF",
-        validade: "30/09/2026",
-        descricao: "Headset com microfone integrado e som imersivo.",
+        categoria: "TECNOLOGIA",
+        nome: "Monitor Gamer",
+        precoOriginal: "R$ 1.899,00",
+        precoPromocional: "R$ 1.499,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Monitor para jogos e produtividade com tela ampla.",
         temTamanho: false,
         variacoes: [
-            { nome: "USB", especificacao: "Conexão USB • Microfone integrado", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Wireless", especificacao: "Sem fio • Microfone integrado", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Gamer", especificacao: "Monitor gamer", imagem: "../imagens/monitor-gamer.jpg" },
+            { nome: "Branco", especificacao: "Setup com monitor branco", imagem: "../imagens/setup-monitor-branco.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 12
     12: {
-        categoria: "INFORMÁTICA",
-        nome: "Webcam Full HD",
-        precoOriginal: "R$ 249,90",
-        precoPromocional: "R$ 179,90",
-        desconto: "28% OFF",
-        validade: "30/09/2026",
-        descricao: "Webcam Full HD para aulas, reuniões e transmissões.",
+        categoria: "TECNOLOGIA",
+        nome: "Desktop Completo",
+        precoOriginal: "R$ 4.299,00",
+        precoPromocional: "R$ 3.599,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Computador completo para estudos, trabalho e uso diário.",
         temTamanho: false,
         variacoes: [
-            { nome: "Padrão", especificacao: "1080p • Microfone integrado", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Com tripé", especificacao: "1080p • Mini tripé incluso", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Modelo 1", especificacao: "Desktop completo", imagem: "../imagens/desktop-completo-01.jpg" },
+            { nome: "Dell 1", especificacao: "Desktop Dell", imagem: "../imagens/desktop-dell-01.jpg" },
+            { nome: "Dell 2", especificacao: "Desktop Dell com monitor", imagem: "../imagens/desktop-dell-02.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 13
     13: {
-        categoria: "INFORMÁTICA",
-        nome: "Mousepad XL",
-        precoOriginal: "R$ 119,90",
-        precoPromocional: "R$ 79,90",
-        desconto: "33% OFF",
-        validade: "30/09/2026",
-        descricao: "Mousepad grande para teclado e mouse.",
+        categoria: "TECNOLOGIA",
+        nome: "Mouse Sem Fio",
+        precoOriginal: "R$ 199,00",
+        precoPromocional: "R$ 139,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Mouse sem fio compacto para trabalho e estudos.",
         temTamanho: false,
         variacoes: [
-            { nome: "Preto", especificacao: "900 x 400 mm • Base emborrachada", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Estampado", especificacao: "900 x 400 mm • Base emborrachada", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Branco", especificacao: "Cor branca", imagem: "../imagens/mouse-branco.jpg" },
+            { nome: "Rosa", especificacao: "Cor rosa", imagem: "../imagens/mouse-rosa.jpg" },
+            { nome: "Azul", especificacao: "Cor azul", imagem: "../imagens/mouse-azul.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 14
     14: {
-        categoria: "INFORMÁTICA",
-        nome: "Caixa de Som USB",
-        precoOriginal: "R$ 179,90",
-        precoPromocional: "R$ 129,90",
-        desconto: "28% OFF",
-        validade: "30/09/2026",
-        descricao: "Caixa de som compacta para computador.",
+        categoria: "TECNOLOGIA",
+        nome: "Notebook",
+        precoOriginal: "R$ 5.999,00",
+        precoPromocional: "R$ 5.199,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Notebook para estudos, trabalho e produtividade.",
         temTamanho: false,
         variacoes: [
-            { nome: "Preta", especificacao: "USB • Controle de volume", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "RGB", especificacao: "USB • Iluminação RGB", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Rosa", especificacao: "Acabamento rosa", imagem: "../imagens/notebook-rosa.jpg" },
+            { nome: "Preto", especificacao: "Acabamento preto", imagem: "../imagens/notebook-preto.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 15
     15: {
-        categoria: "INFORMÁTICA",
-        nome: "Suporte para Notebook",
-        precoOriginal: "R$ 149,90",
-        precoPromocional: "R$ 99,90",
-        desconto: "33% OFF",
-        validade: "30/09/2026",
-        descricao: "Suporte ajustável para melhorar a ergonomia.",
+        categoria: "TECNOLOGIA",
+        nome: "Smart TV 4K",
+        precoOriginal: "R$ 3.799,00",
+        precoPromocional: "R$ 3.099,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Smart TV para filmes, séries, aplicativos e entretenimento.",
         temTamanho: false,
         variacoes: [
-            { nome: "Alumínio", especificacao: "Estrutura em alumínio • Ajustável", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "Preto", especificacao: "Estrutura metálica • Ajustável", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Modelo 1", especificacao: "Tela ampla", imagem: "../imagens/smart-tv-01.jpg" },
+            { nome: "Modelo 2", especificacao: "Smart Hub", imagem: "../imagens/smart-tv-02.jpg" },
+            { nome: "Modelo 3", especificacao: "Design fino", imagem: "../imagens/smart-tv-03.jpg" }
         ]
     },
 
-    // ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL 16
     16: {
-        categoria: "INFORMÁTICA",
-        nome: "Hub USB 4 Portas",
-        precoOriginal: "R$ 129,90",
-        precoPromocional: "R$ 89,90",
-        desconto: "31% OFF",
-        validade: "30/09/2026",
-        descricao: "Hub USB para ampliar as conexões do computador.",
+        categoria: "TECNOLOGIA",
+        nome: "Robô Aspirador Inteligente",
+        precoOriginal: "R$ 2.899,00",
+        precoPromocional: "R$ 2.299,00",
+        desconto: "OFERTA",
+        validade: "30/11/2026",
+        descricao: "Robô aspirador inteligente para automatizar a limpeza da casa.",
         temTamanho: false,
         variacoes: [
-            { nome: "USB 3.0", especificacao: "4 portas • USB 3.0", imagem: "../Imagens/Produto teste.webp" },
-            { nome: "USB-C", especificacao: "4 portas • Conector USB-C", imagem: "../Imagens/Produto teste.webp" }
+            { nome: "Preto", especificacao: "Modelo preto", imagem: "../imagens/robo-aspirador-preto.jpg" },
+            { nome: "Branco", especificacao: "Modelo branco", imagem: "../imagens/robo-aspirador-branco.jpg" },
+            { nome: "Premium", especificacao: "Estação premium", imagem: "../imagens/robo-aspirador-premium-preto.jpg" }
         ]
     }
 
 };
 
 // ATUALIZAÇÃO 01/09 - SOMENTE AS DUAS CATEGORIAS QUE FICARAM NA PÁGINA DE PROMOÇÕES
-const categoriasPromocao = ["ROUPAS", "INFORMÁTICA"];
+const categoriasPromocao = ["ACESSÓRIOS", "TECNOLOGIA"];
 
 // ATUALIZAÇÃO 01/09 - CONTROLA QUAIS CARROSSÉIS PODEM SE MOVIMENTAR
 const carrosseisAtivos = {};
@@ -468,7 +455,7 @@ function pararCarrossel(categoria) {
 
 // ATUALIZAÇÃO 01/09 - INICIA A PÁGINA DE PROMOÇÕES SEM DEPENDER DE UMA QUANTIDADE FIXA DE PRODUTOS
 document.addEventListener("DOMContentLoaded", function() {
-    const paginaPromocoes = document.getElementById("carrossel-roupas");
+    const paginaPromocoes = document.getElementById("carrossel-acessorios");
 
     if (!paginaPromocoes) {
         return;

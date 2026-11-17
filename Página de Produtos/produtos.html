@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <title>Produtos - Minha Loja</title>
+    <title>Produtos - CasaTech</title>
 
     <link
         rel="stylesheet"
@@ -33,7 +33,7 @@
     <header>
 
         <img
-            src="../Imagens/LOJA TESTE (1).png"
+            src="../imagens/logo-casatech.jpg"
             alt="Logo da loja"
         >
 
@@ -114,43 +114,11 @@
             class="menu-categorias"
             id="menuCategorias"
         >
-
-
-            <button
-                onclick="filtrarCategoria('todos')"
-            >
-                TODOS
-            </button>
-
-
-            <button
-                onclick="filtrarCategoria('roupas')"
-            >
-                ELETROS
-            </button>
-
-
-            <button
-                onclick="filtrarCategoria('informatica')"
-            >
-                INFORMÁTICA
-            </button>
-
-
-            <button
-                onclick="filtrarCategoria('acessorios')"
-            >
-                CELULARES
-            </button>
-
-
-            <button
-                onclick="filtrarCategoria('outros')"
-            >
-                OUTROS
-            </button>
-
-
+            <button onclick="filtrarCategoria('todos')">TODOS</button>
+            <button onclick="filtrarCategoria('celulares')">CELULARES</button>
+            <button onclick="filtrarCategoria('informatica')">INFORMÁTICA</button>
+            <button onclick="filtrarCategoria('eletros')">ELETROS</button>
+            <button onclick="filtrarCategoria('acessorios')">ACESSÓRIOS</button>
         </div>
 
     </div>
@@ -161,305 +129,85 @@
 
     <main class="produtos">
 
-
-        <!-- PRODUTO 1 -->
-
-        <div
-            class="produto"
-            data-categoria="CELULARES"
-            onclick="abrirProduto(1)"
-        >
-
-            <img
-                src="../imagens 2.0/IMG-20261109-WA0000.jpg"
-                alt="IPhone 18 Pro Max"
-                loading="lazy"
-            >
-
-            <h2>
-                IPhone 18 Pro Max 256 GB
-            </h2>
-
-            <p>
-                R$ 11.999
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 1 CASATECH -->
+        <div class="produto" data-categoria="celulares" onclick="abrirProduto(1)">
+            <img src="../imagens/smartphone-premium-bordo.jpg" alt="Smartphone Premium 256 GB" loading="lazy">
+            <h2>Smartphone Premium 256 GB</h2>
+            <p>R$ 11.999,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 2 -->
-
-        <div
-            class="produto"
-            data-categoria="CELULARES"
-            onclick="abrirProduto(2)"
-        >
-
-            <img
-                src="../imagens 2.0/IMG-20261109-WA0000.jpg"
-                alt="IPhone 18 Pro Max"
-                loading="lazy"
-            >
-
-            <h2>
-                IPhone 18 Pro Max 256 GB 
-            </h2>
-
-            <p>
-                R$ 11.999
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 2 CASATECH -->
+        <div class="produto" data-categoria="celulares" onclick="abrirProduto(2)">
+            <img src="../imagens/smartphone-galaxy-s26-ultra-roxo.jpg" alt="Galaxy S26 Ultra" loading="lazy">
+            <h2>Galaxy S26 Ultra</h2>
+            <p>R$ 8.999,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 3 -->
-
-        <div
-            class="produto"
-            data-categoria="acessorios"
-            onclick="abrirProduto(3)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Mochila"
-                loading="lazy"
-            >
-
-            <h2>
-                Mochila
-            </h2>
-
-            <p>
-                R$ 200,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 3 CASATECH -->
+        <div class="produto" data-categoria="eletros" onclick="abrirProduto(3)">
+            <img src="../imagens/robo-aspirador-preto.jpg" alt="Robô Aspirador Inteligente" loading="lazy">
+            <h2>Robô Aspirador Inteligente</h2>
+            <p>R$ 2.499,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 4 -->
-
-        <div
-            class="produto"
-            data-categoria="outros"
-            onclick="abrirProduto(4)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Perfume"
-                loading="lazy"
-            >
-
-            <h2>
-                Perfume
-            </h2>
-
-            <p>
-                R$ 250,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 4 CASATECH -->
+        <div class="produto" data-categoria="eletros" onclick="abrirProduto(4)">
+            <img src="../imagens/geladeira-smart-inox-01.jpg" alt="Geladeira Smart" loading="lazy">
+            <h2>Geladeira Smart</h2>
+            <p>R$ 6.999,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 5 -->
-
-        <div
-            class="produto"
-            data-categoria="roupas"
-            onclick="abrirProduto(5)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Moletom Street"
-                loading="lazy"
-            >
-
-            <h2>
-                Moletom Street
-            </h2>
-
-            <p>
-                R$ 250,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 5 CASATECH -->
+        <div class="produto" data-categoria="acessorios" onclick="abrirProduto(5)">
+            <img src="../imagens/oculos-vr-01.jpg" alt="Óculos de Realidade Virtual" loading="lazy">
+            <h2>Óculos de Realidade Virtual</h2>
+            <p>R$ 399,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 6 -->
-
-        <div
-            class="produto"
-            data-categoria="informatica"
-            onclick="abrirProduto(6)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Teclado Mecânico"
-                loading="lazy"
-            >
-
-            <h2>
-                Teclado Mecânico
-            </h2>
-
-            <p>
-                R$ 250,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 6 CASATECH -->
+        <div class="produto" data-categoria="acessorios" onclick="abrirProduto(6)">
+            <img src="../imagens/fone-bluetooth-preto.jpg" alt="Fone Bluetooth" loading="lazy">
+            <h2>Fone Bluetooth</h2>
+            <p>R$ 899,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 7 -->
-
-        <div
-            class="produto"
-            data-categoria="acessorios"
-            onclick="abrirProduto(7)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Boné"
-                loading="lazy"
-            >
-
-            <h2>
-                Boné
-            </h2>
-
-            <p>
-                R$ 250,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 7 CASATECH -->
+        <div class="produto" data-categoria="informatica" onclick="abrirProduto(7)">
+            <img src="../imagens/teclado-mecanico-branco.jpg" alt="Teclado Mecânico Compacto" loading="lazy">
+            <h2>Teclado Mecânico Compacto</h2>
+            <p>R$ 349,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 8 -->
-
-        <div
-            class="produto"
-            data-categoria="outros"
-            onclick="abrirProduto(8)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Caneca Personalizada"
-                loading="lazy"
-            >
-
-            <h2>
-                Caneca Personalizada
-            </h2>
-
-            <p>
-                R$ 250,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 8 CASATECH -->
+        <div class="produto" data-categoria="eletros" onclick="abrirProduto(8)">
+            <img src="../imagens/smart-tv-01.jpg" alt="Smart TV 4K" loading="lazy">
+            <h2>Smart TV 4K</h2>
+            <p>R$ 3.299,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 9 -->
-
-        <div
-            class="produto"
-            data-categoria="roupas"
-            onclick="abrirProduto(9)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Calça Cargo"
-                loading="lazy"
-            >
-
-            <h2>
-                Calça Cargo
-            </h2>
-
-            <p>
-                R$ 250,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 9 CASATECH -->
+        <div class="produto" data-categoria="informatica" onclick="abrirProduto(9)">
+            <img src="../imagens/notebook-rosa.jpg" alt="Notebook" loading="lazy">
+            <h2>Notebook</h2>
+            <p>R$ 5.499,00</p>
+            <button>Ver produto</button>
         </div>
 
-
-
-        <!-- PRODUTO 10 -->
-
-        <div
-            class="produto"
-            data-categoria="informatica"
-            onclick="abrirProduto(10)"
-        >
-
-            <img
-                src="../Imagens/Produto teste.webp"
-                alt="Headset Gamer"
-                loading="lazy"
-            >
-
-            <h2>
-                Headset Gamer
-            </h2>
-
-            <p>
-                R$ 250,00
-            </p>
-
-            <button>
-                Ver produto
-            </button>
-
+        <!-- ATUALIZAÇÃO 17/11 - PRODUTO 10 CASATECH -->
+        <div class="produto" data-categoria="acessorios" onclick="abrirProduto(10)">
+            <img src="../imagens/smart-speaker-branco.jpg" alt="Smart Speaker com Relógio" loading="lazy">
+            <h2>Smart Speaker com Relógio</h2>
+            <p>R$ 699,00</p>
+            <button>Ver produto</button>
         </div>
-
 
     </main>
 
