@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        Contato - Minha Loja
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="contato.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- BARRA SUPERIOR -->
+
+    <div class="barra-topo">
+
+        PRECISA DE AJUDA?
+        ESTAMOS AQUI PARA VOCÊ
+
+    </div>
+
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <img
+            src="../Imagens/LOJA TESTE (1).png"
+            alt="Logo da loja"
+        >
+
+        <!-- ATUALIZAÇÃO 03/11 - USUÁRIO LOGADO DISPONÍVEL EM TODO O SITE -->
+        <div class="area-usuario" id="areaUsuario">
+            <span id="nomeUsuarioLogado"></span>
+
+            <button
+                type="button"
+                class="icone-carrinho"
+                title="Carrinho"
+            >
+                🛒
+            </button>
+
+            <button
+                type="button"
+                class="botao-sair"
+                onclick="sairDaConta()"
+            >
+                SAIR
+            </button>
+        </div>
+
+    </header>
+
+
+
+    <!-- MENU -->
+
+    <nav class="menu">
+
+        <a href="../Página de Início/inicio.html">
+            INÍCIO
+        </a>
+
+        <a href="../Página de Produtos/produtos.html">
+            PRODUTOS
+        </a>
+
+        <!-- ATUALIZAÇÃO 01/09 - LINK PARA A NOVA PÁGINA DE PROMOÇÕES -->
+        <a href="../Página de Promoções/promocoes.html">
+            PROMOÇÕES
+        </a>
+
+        <a href="contato.html">
+            CONTATO
+        </a>
+
+    </nav>
+
+
+
+    <!-- SUPORTE -->
+
+    <section class="suporte">
+
+        <h1>
+            COMO PODEMOS TE AJUDAR?
+        </h1>
+
+
+        <input
+            type="text"
+            id="pesquisaFaq"
+            placeholder="Digite sua dúvida..."
+            onkeyup="filtrarFAQ()"
+        >
+
+    </section>
+
+
+
+    <!-- PERGUNTAS -->
+
+    <section class="faq">
+
+
+        <div class="pergunta">
+
+            <h3>
+                Como acompanhar meu pedido?
+            </h3>
+
+            <p>
+                Você pode acompanhar seu pedido
+                na área "Meus pedidos".
+            </p>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <h3>
+                Qual o prazo de entrega?
+            </h3>
+
+            <p>
+                Nosso prazo médio é de
+                3 a 7 dias úteis.
+            </p>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <h3>
+                Posso trocar um produto?
+            </h3>
+
+            <p>
+                Sim. Você pode solicitar troca
+                em até 7 dias após o recebimento.
+            </p>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <h3>
+                Quais formas de pagamento aceitam?
+            </h3>
+
+            <p>
+                Aceitamos cartão de crédito,
+                PIX e boleto bancário.
+            </p>
+
+        </div>
+
+
+
+        <div class="pergunta">
+
+            <h3>
+                Como entrar em contato com a loja?
+            </h3>
+
+            <p>
+                Você pode nos enviar mensagem
+                pelo WhatsApp ou e-mail.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ATUALIZAÇÃO 20/10 - NOVA SEÇÃO COM A LOCALIZAÇÃO DA LOJA -->
+     
+    <section class="localizacao">
+
+        <h2>
+            ONDE ESTAMOS
+        </h2>
+
+        <p>
+            Avenida Paulista, 1000 - São Paulo - SP
+        </p>
+
+        <div class="mapa-loja">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.596766535435!2d-46.41502982589369!3d-23.54700127880961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce65745a5bb551%3A0x192a370c73c2c5c6!2sAcademia%20SEMA!5e0!3m2!1sen!2sbr!4v1793104099658!5m2!1sen!2sbr"
+                title="Localização da loja no Google Maps"
+                loading="lazy"
+                allowfullscreen=""
+            >
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="contato.js"></script>
+
+    <!-- ATUALIZAÇÃO 03/11 - MOSTRA O USUÁRIO LOGADO EM TODO O SITE -->
+    <script src="../Página de Login/usuario.js"></script>
+
+
+</body>
+
+</html>

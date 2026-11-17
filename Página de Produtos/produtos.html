@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Produtos - Minha Loja</title>
+
+    <link
+        rel="stylesheet"
+        href="produtos.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- BARRA SUPERIOR -->
+
+    <div class="barra-topo">
+
+        CALCULE O FRETE NO CARRINHO 🚚
+
+    </div>
+
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <img
+            src="../Imagens/LOJA TESTE (1).png"
+            alt="Logo da loja"
+        >
+
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="O que você procura?"
+            onkeyup="filtrarProdutos()"
+        >
+
+        <!-- ATUALIZAÇÃO 03/11 - USUÁRIO LOGADO DISPONÍVEL EM TODO O SITE -->
+        <div class="area-usuario" id="areaUsuario">
+            <span id="nomeUsuarioLogado"></span>
+
+            <button
+                type="button"
+                class="icone-carrinho"
+                title="Carrinho"
+            >
+                🛒
+            </button>
+
+            <button
+                type="button"
+                class="botao-sair"
+                onclick="sairDaConta()"
+            >
+                SAIR
+            </button>
+        </div>
+
+    </header>
+
+
+
+    <!-- MENU -->
+
+    <nav class="menu">
+
+        <a href="../Página de Início/inicio.html">
+            INÍCIO
+        </a>
+
+        <a href="produtos.html">
+            PRODUTOS
+        </a>
+
+        <!-- ATUALIZAÇÃO 01/09 - LINK PARA A NOVA PÁGINA DE PROMOÇÕES -->
+        <a href="../Página de Promoções/promocoes.html">
+            PROMOÇÕES
+        </a>
+
+        <a href="../Página de Contatos/contato.html">
+            CONTATO
+        </a>
+
+    </nav>
+
+
+
+    <!-- CATEGORIAS -->
+
+    <div class="area-categorias">
+
+
+        <button
+            class="botao-categorias"
+            onclick="abrirCategorias()"
+        >
+
+            CATEGORIAS ▼
+
+        </button>
+
+
+        <div
+            class="menu-categorias"
+            id="menuCategorias"
+        >
+
+
+            <button
+                onclick="filtrarCategoria('todos')"
+            >
+                TODOS
+            </button>
+
+
+            <button
+                onclick="filtrarCategoria('roupas')"
+            >
+                ELETROS
+            </button>
+
+
+            <button
+                onclick="filtrarCategoria('informatica')"
+            >
+                INFORMÁTICA
+            </button>
+
+
+            <button
+                onclick="filtrarCategoria('acessorios')"
+            >
+                CELULARES
+            </button>
+
+
+            <button
+                onclick="filtrarCategoria('outros')"
+            >
+                OUTROS
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- PRODUTOS -->
+
+    <main class="produtos">
+
+
+        <!-- PRODUTO 1 -->
+
+        <div
+            class="produto"
+            data-categoria="CELULARES"
+            onclick="abrirProduto(1)"
+        >
+
+            <img
+                src="../imagens 2.0/IMG-20261109-WA0000.jpg"
+                alt="IPhone 18 Pro Max"
+                loading="lazy"
+            >
+
+            <h2>
+                IPhone 18 Pro Max 256 GB
+            </h2>
+
+            <p>
+                R$ 11.999
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 2 -->
+
+        <div
+            class="produto"
+            data-categoria="CELULARES"
+            onclick="abrirProduto(2)"
+        >
+
+            <img
+                src="../imagens 2.0/IMG-20261109-WA0000.jpg"
+                alt="IPhone 18 Pro Max"
+                loading="lazy"
+            >
+
+            <h2>
+                IPhone 18 Pro Max 256 GB 
+            </h2>
+
+            <p>
+                R$ 11.999
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 3 -->
+
+        <div
+            class="produto"
+            data-categoria="acessorios"
+            onclick="abrirProduto(3)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Mochila"
+                loading="lazy"
+            >
+
+            <h2>
+                Mochila
+            </h2>
+
+            <p>
+                R$ 200,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 4 -->
+
+        <div
+            class="produto"
+            data-categoria="outros"
+            onclick="abrirProduto(4)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Perfume"
+                loading="lazy"
+            >
+
+            <h2>
+                Perfume
+            </h2>
+
+            <p>
+                R$ 250,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 5 -->
+
+        <div
+            class="produto"
+            data-categoria="roupas"
+            onclick="abrirProduto(5)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Moletom Street"
+                loading="lazy"
+            >
+
+            <h2>
+                Moletom Street
+            </h2>
+
+            <p>
+                R$ 250,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 6 -->
+
+        <div
+            class="produto"
+            data-categoria="informatica"
+            onclick="abrirProduto(6)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Teclado Mecânico"
+                loading="lazy"
+            >
+
+            <h2>
+                Teclado Mecânico
+            </h2>
+
+            <p>
+                R$ 250,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 7 -->
+
+        <div
+            class="produto"
+            data-categoria="acessorios"
+            onclick="abrirProduto(7)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Boné"
+                loading="lazy"
+            >
+
+            <h2>
+                Boné
+            </h2>
+
+            <p>
+                R$ 250,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 8 -->
+
+        <div
+            class="produto"
+            data-categoria="outros"
+            onclick="abrirProduto(8)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Caneca Personalizada"
+                loading="lazy"
+            >
+
+            <h2>
+                Caneca Personalizada
+            </h2>
+
+            <p>
+                R$ 250,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 9 -->
+
+        <div
+            class="produto"
+            data-categoria="roupas"
+            onclick="abrirProduto(9)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Calça Cargo"
+                loading="lazy"
+            >
+
+            <h2>
+                Calça Cargo
+            </h2>
+
+            <p>
+                R$ 250,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+
+        <!-- PRODUTO 10 -->
+
+        <div
+            class="produto"
+            data-categoria="informatica"
+            onclick="abrirProduto(10)"
+        >
+
+            <img
+                src="../Imagens/Produto teste.webp"
+                alt="Headset Gamer"
+                loading="lazy"
+            >
+
+            <h2>
+                Headset Gamer
+            </h2>
+
+            <p>
+                R$ 250,00
+            </p>
+
+            <button>
+                Ver produto
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="produtos.js"></script>
+
+    <!-- ATUALIZAÇÃO 03/11 - MOSTRA O USUÁRIO LOGADO EM TODO O SITE -->
+    <script src="../Página de Login/usuario.js"></script>
+
+
+</body>
+
+</html>
